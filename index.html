@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body style="font-family: 'Poppins', sans-serif; background-image: url('assets/img/back.png'); background-size: cover;">
+<body style="font-family: 'Poppins', sans-serif; background-image: url('assets/img/back.png'); background-size: contain; background-repeat: no-repeat;">
     <nav class="navbar navbar-expand-lg navbar-white">
         <div class="container-fluid ">
             <a class="navbar-brand" href="#">
@@ -40,7 +40,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Page</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link active" aria-current="page" href="Frontend/Login.html">
                             <button class="btn-sign-up">Sign Up</button>
                         </a>
                     </li>
@@ -48,13 +48,18 @@
             </div>
         </div>
     </nav>
-
-    <div style="position: absolute; top: 86px; left: 220px;">
-        <img src="assets/img/brain.png" alt="Brain Image" width="633" height="595">
-  </div>
-    <div style="position: absolute; top: 374px; left: 877px;">
-        <h1 style="font-weight: bold; font-size: 30px; line-height: 40px; color: #ffffff;">Selamat Datang</h1>
+    <div class="background">
+        <div class="row">
+            <div class="col-8" style="">
+                <img src="assets/img/brain.png" alt="Brain Image" width="633" height="595">
+            </div>
+            <div class="col-4 note">
+                <h1>Selamat Datang!</h1>
+                <h4>Jiwaku</h4>
+                <p>Bagaimana kabarnya hari ini?</p>
+            </div>
+        </div>
     </div>
-
+   
 </body>
 </html>
