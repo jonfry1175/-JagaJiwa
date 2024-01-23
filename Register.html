@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap</title>
+    <title>Register</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,77 +17,101 @@
     <style>
         body{
             font-family: 'Poppins', sans-serif; 
-            background-image: url('assets/img/login.png'); 
-   
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            overflow: hidden;
+            background-image: url('asset/login.png'); 
+            background-size: 82.3%;
         }
-
-
+        
+        
         .container {
+            width: 38%;
+            margin: 30px;
             margin-left: 74px;
-            margin-top: 65px;
+            padding: 0;
+            /* padding-top: 65px;
+            padding-bottom: 20%; */
+            position: relative;
+            /* background-color: yellow; */
+        }
+        .container h1 {
+            /* background-color: aqua; */
+            font-size: xx-large;
         }
 
         .container form {
-            top: 167px;
-            left: 8px;
+            /* background-color: aqua; */
         }
 
-        .container label {
+        .container input {
             display: block;
-            width: 400px;
-            height: 60px;
+            width: 100%;
+            height: 50px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             padding: 10px;
         }
 
         .container button {
-            width: 400px;
-            height: 60px;
+            width: 100%;
+            height: 50px;
             background-color: #24317F;
             color: #ffffff;
             border: none;
             border-radius: 32px;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
             margin-left: 0;
             margin-top: 10px; /* Adjusted margin-top value */
         }
+        .container .or {
+            margin-top: 20px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
 
         .container .divider {
-            position: absolute;
-            top: 441px;
-            left: 115px;
-            width: 170px;
+            /* margin-top: 20px; */
+            margin-left: -85px;
+            
+            width: 45%;
             height: 1px;
             background-color: #000;
         }
 
         .container .or-text {
-            position: absolute;
-            top: 430px;
-            left: 270px;
+            /* position: absolute; */
+            /* display: block; */
+            /* z-index: -2; */
+            margin-left: 48%;
+            margin-right: auto;
+            width: fit-content;
             background-color: #fff;
-            padding: 0 10px;
+            /* padding: 0 10px; */
         }
 
         .container .right-divider {
-            position: absolute;
-            top: 441px;
-            left: 310px;
-            width: 170px;
+            /* float: right; */
+            /* margin-top: 20px; */
+            width: 45%;
             height: 1px;
             background-color: #000;
         }
         .container-login {
-            margin-top: 60px;
+            position: relative;
+            margin-top: 30px;
+            /* background-color: red; */
+            /* text-align: center; */
         }
         .container-login label {
+            cursor: pointer;
             display: flex;
             align-items: center;
-            width: 400px;
-            height: 60px;
-            margin-left: 10px;
+            width: 100%;
+            height: 50px;
+            margin-left: 0px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             padding: 10px;
@@ -99,15 +123,18 @@
             height: 25px;
             margin-right: 10px; 
         }
-
+        .container .divider{
+            position: absolute;
+            left: 84px;
+        }
         .container-login a {
             margin-left: 5px;
         }
         .container-login p {
-        position: absolute;
-        top: 632px; 
-        left: 164px;
-        margin: 0; 
+        margin-top: 20px;
+        font-size: small;
+        /* position: absolute; */
+        text-align: center;
         }
         .container-login a {
         text-decoration: none; /* Remove underline */
@@ -119,34 +146,37 @@
 
 <body>
     <div class="container">
-        <h1>Get Started Now</h1>
-        <br>
+        <h1>Welcome Back !</h1>
         <form action="">
-            <label for="Password">Username</label>
-            <label for="username">Email</label>
-            <label for="Password">Password</label>
-            <button>Sign Up</button>
+            <input type="text" id="Username" name="Username" placeholder="Username">
+            <input type="text" id="Email" name="Email" placeholder="Email">
+            <input type="text" id="Password" name="Password" placeholder="Password">
+            <button type="submit" value="submit">Sign In</button>
         </form>
-        <div class="divider"></div>
-        <div class="or-text">or</div>
-        <div class="right-divider"></div>
-        
-    <div class="container-login">
+        <div class="or">
+            <div class="divider"></div>
+            <div class="or-text">Or</div>
+            <div class="right-divider"></div>
+        </div>
         <div class="container-login">
             <div class="container-login">
-                <label for="">
-                    <img src="assets/img/google.png" alt="gg" class="google-logo">
-                    Sign In With Google
-                </label>
-            
-                <label for="">
-                    <img src="assets/img/fb.png" alt="fb" class="facebook-logo">
-                    Sign In With Facebook
-                </label>
-                <p>Have an account?<a href="" > Sign In</a></p>
+                <div class="container-login">
+                    <link href ="#">
+                        <label for="">
+                            <img src="asset/google.png" alt="gg" class="google-logo">
+                            Sign In With Google
+                        </label>
+                    </link>
+                    <link href ="#">
+                        <label for="">
+                            <img src="asset/fb.png" alt="fb" class="facebook-logo">
+                            Sign In With Facebook
+                        </label>
+                     </link>
+                    <p>Don't Have an account?<a href="" > Sign Up</a></p>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 </html>
