@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: small;
+  color: #6d6e76;
+}
+
+strong {
+  font-size: xx-large;
+}
+
+section {
+  align-items: center;
+  padding: 140px 60px 100px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: #1b7c9d;
+  color: white;
+  border: none;
+}
+
+/* ========>  HEADER <======== */
+header {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0px 70px 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.6s;
+  z-index: 1000;
+  background-color: #bde2ea;
+}
+
+header.sticky {
+  padding: 0px 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 20px grey;
+  transition: 0.6s;
+}
+
+header ul {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  color: black;
+  margin: 0 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+/* ========> SECTION <======== */
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+}
+
+.section-1 .img,
+.section-1 .text {
+  margin: 0 2px; /* Jarak 2px di setiap sisi (kiri dan kanan) */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+title {
+  align-text: left;
+}
+
+.section-1 img.shuttle {
+  width: 24px;
+  margin-top: 20px;
+}
+.star {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.start {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.wear {
+  width: 1280px;
+  height: 582px;
+}
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.section-2 .artikle {
+  text-align: center;
+}
+.section-2 p {
+  text-align: left;
+}
