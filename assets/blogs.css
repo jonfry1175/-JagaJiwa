@@ -118,7 +118,7 @@ title {
   margin-top: 20px;
 }
 .wear {
-  width: 1280px;
+  width: 1000px;
   height: 582px;
 }
 .section-2 {
@@ -130,6 +130,100 @@ title {
 .section-2 .artikle {
   text-align: center;
 }
+.section-2 .text {
+  padding: 20px 0px 20px;
+  max-width: 825px;
+}
 .section-2 p {
   text-align: left;
+}
+.section-3 {
+  padding-top: 0px;
+}
+.section-3 img {
+  width: 405px;
+  height: 308px;
+}
+.section-3 .categorys {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-text: left;
+}
+
+.section-3 .categorys .category {
+  padding: 10px 10px 10px;
+  max-width: 450px;
+  transition: 0.6s;
+}
+
+.section-3 .categorys .category:hover {
+  background-color: #bde2ea;
+  transition: 0.6s;
+}
+
+.section-3 .categorys .category strong {
+  font-size: 100%;
+  align-text: left;
+}
+
+.section-4 {
+  padding: 0px 0px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-4 div {
+  max-width: 450px;
+  text-align: center;
+}
+
+.section-5 {
+  position: relative;
+  align-items: start;
+  padding-left: 200px;
+  padding-right: 200px;
+  background-color: #1b7c9d;
+}
+.section-5 .decoration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* z-index: -1; */
+}
+.section-5 p {
+  margin-top: 100px;
+  text-align: center;
+}
+.section-5 .atas {
+  display: flex;
+  align-items: start;
+}
+.section-5 .white-logo {
+  padding-right: 100px;
+}
+.section-5 ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 50px;
+}
+.section-5 ul li {
+  padding: 20px 0 0px;
+}
+.section-5 ul li img {
+  padding-right: 5px;
+}
+.section-5 li,
+.section-5 strong,
+.section-5 p {
+  color: white;
+}
+.section-5 li,
+.section-5 p {
+  font-size: smaller;
+}
+.section-5 .line {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
 }
